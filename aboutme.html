@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+</head>
+<body>
+
+    <hello-world></hello-world>
+
+
+    <h1>About Me</h1>
+
+    <button id="openBtn">My Voice</button>
+
+    <dialog id="audio">        
+        <audio controls>
+            <source src="audio/intro.mp3" type="audio/mpeg">
+        </audio>
+    </dialog>
+    
+
+    <p>Hello! </p>
+    <p>
+        Thank you for visiting my website. I am going into my fifth year of study at UC San Diego 
+        where I am pursuing a <i>Bachelor of Science in Computer Engineering</i>. 
+        I was born in Columbus, Ohio and currently reside in San Diego, California.
+        Other places I have lived include Savannah, GA and Atlanta, GA. 
+
+    </p>
+
+    <section>
+        <h2>Answering some questions you might have about me</h2>
+        <ol>
+            <li>Describe a time when you had to step up and demonstrate leadership skills.
+                <ul>
+                    <li>When I was doing my Postura project, our initial design did not work. We were a couple weeks from the deadline so I stepped up and planned a new design and outlined the steps to get there. I orgnaized meetups so we could build and troubleshoot.</li>
+                </ul>
+            </li>
+            <li>Tell me about a time you failed. How did you deal with the situation?
+                <ul>
+                    <li>I failed a class twice and each time I took it, I reflected on what I needed to do differently to be better next time. In my third time around, I never skipped a class, formed a study group, and went to office hours.</li>
+                </ul>
+            </li>
+            <li>Give me an example of a time when you were able to successfully persuade someone at work to see things your way.
+                <ul>
+                    <li>During my Postura project, I had to convince my team that we should change our design. I explained the issues with our current design and how the new design would solve those issues. I also showed them a rough prototype of the new design to help them visualize it.</li>
+                </ul>
+            </li>
+            <li>Describe a time when you saw a problem and took the initiative to correct it.
+                <ul>
+                    <li>When I was working on my engineering club's 3D printed hovercraft, I saw that the bracket that I was designing did not securly attach to the main body, so I changed it so that it could easily be scerwed on instead of super glued.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log('Hello World!');
+            }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
+    
+</body>
+
+</html>
